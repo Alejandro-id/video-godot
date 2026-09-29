@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="icon_color.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presentación Sobre Godot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <h1>Godot Engine</h1>
+    <p>¿Qué es Godot Engine?</p>
+  </header>
+
+  <main class="container">
+
+    <section class="video-card">
+      <h2>Video sobre Godot Engine</h2>
+      <div class="video-wrapper">
+        <video id="godotVideo" controls poster="godot-poster.png">
+          <source src="godot-video.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+      <div class="controls">
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>¿Qué es Godot?</h2>
+      <p>
+        Godot Engine es un motor de videojuegos gratuito y de código abierto que permite crear videojuegos y
+        aplicaciones 2D y 3D.
+      </p>
+      <p>
+        Un motor de videojuegos es un conjunto de herramientas que permite desarrollar un juego sin tener que programar
+        desde cero sistemas como gráficos, física, sonido, animaciones, entrada del jugador, escenas, etc.
+      </p>
+      <p>
+        Godot está diseñado para trabajar desde una misma interfaz y permite desarrollar proyectos para Windows, Linux,
+        macOS, Android, iOS y la web, además de permitir trabajar con consolas mediante soluciones de terceros.
+      </p>
+      <p>
+        En pocas palabras: Godot es un programa que reúne las herramientas necesarias para crear videojuegos.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>¿Para qué sirve Godot?</h2>
+      <p>Godot sirve principalmente para desarrollar videojuegos, tanto pequeños proyectos independientes como juegos más complejos.</p>
+      <p>Se puede utilizar para crear:</p>
+      <ul>
+        <li>🎮 Juegos 2D</li>
+        <li>🧊 Juegos 3D</li>
+        <li>📱 Juegos para celulares</li>
+        <li>💻 Juegos para PC</li>
+        <li>🌐 Juegos para navegador</li>
+        <li>🕹️ Juegos para otras plataformas mediante herramientas de terceros</li>
+        <li>🎨 Prototipos</li>
+        <li>🧪 Proyectos experimentales</li>
+        <li>📚 Proyectos educativos</li>
+        <li>🛠️ Aplicaciones interactivas</li>
+      </ul>
+
+      <p>Por ejemplo, con Godot puedes hacer:</p>
+      <ul>
+        <li>Plataformas 2D</li>
+        <li>RPG</li>
+        <li>Juego de disparos</li>
+        <li>Juego de cartas</li>
+        <li>Juego de estrategia</li>
+        <li>Simulador</li>
+        <li>Novela visual</li>
+        <li>Juego de terror</li>
+        <li>Juego de carreras</li>
+        <li>Juego multijugador</li>
+      </ul>
+    </section>
+
+    <section class="info">
+      <h2>¿Qué herramientas incluye?</h2>
+      <p>Godot intenta reunir en un solo programa buena parte de las herramientas necesarias para desarrollar un videojuego.</p>
+
+      <h3>🎨 Gráficos 2D</h3>
+      <p>Godot tiene un sistema específicamente orientado al desarrollo 2D. Incluye:</p>
+      <ul>
+        <li>Sprites</li>
+        <li>Animaciones</li>
+        <li>TileMaps/TileSets</li>
+        <li>Partículas</li>
+        <li>Iluminación 2D</li>
+        <li>Sombras</li>
+        <li>Cámaras</li>
+        <li>Física 2D</li>
+        <li>Parallax</li>
+        <li>Sistemas de partículas</li>
+        <li>Dibujo personalizado</li>
+      </ul>
+      <p>
+        Esto hace que sea especialmente apropiado para juegos como plataformas, RPG 2D, juegos de pelea, juegos de
+        ritmo, etc.
+      </p>
+
+      <h3>🧊 Gráficos 3D</h3>
+      <p>También permite desarrollar juegos 3D con herramientas para:</p>
+      <ul>
+        <li>Modelos 3D</li>
+        <li>Cámaras</li>
+        <li>Iluminación</li>
+        <li>Materiales</li>
+        <li>Sombras</li>
+        <li>Animaciones</li>
+        <li>Física</li>
+        <li>Colisiones</li>
+        <li>Navegación</li>
+        <li>Partículas</li>
+        <li>Entornos 3D</li>
+      </ul>
+      <p>
+        Sin embargo, una de las características de la filosofía de Godot es que algunas tareas avanzadas de creación de
+        contenido 3D pueden requerir programas externos o complementos.
+      </p>
+      <p>
+        Por ejemplo, normalmente podrías utilizar Blender para crear modelos 3D y después importarlos a Godot.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>El sistema de nodos</h2>
+      <p>Una de las características más importantes de Godot es su sistema basado en nodos (Nodes).</p>
+      <p>Un nodo es un elemento que realiza una función determinada.</p>
+      <p>Por ejemplo:</p>
+      <pre>
+Player
+├── Sprite2D
+├── CollisionShape2D
+├── Camera2D
+└── AudioStreamPlayer
+      </pre>
+      <p>
+        Aquí Player puede ser el personaje y los nodos hijos pueden encargarse de:
+      </p>
+      <ul>
+        <li>mostrarlo</li>
+        <li>detectar colisiones</li>
+        <li>controlar la cámara</li>
+        <li>reproducir sonidos</li>
+      </ul>
+      <p>Los nodos pueden combinarse para crear objetos más complejos.</p>
+    </section>
+
+    <section class="info">
+      <h2>¿Qué son las escenas?</h2>
+      <p>Las escenas (Scenes) son otra parte fundamental de Godot.</p>
+      <p>Una escena puede contener un conjunto de nodos que forman un objeto o una parte del juego.</p>
+      <p>Por ejemplo:</p>
+      <ul>
+        <li>Player.tscn</li>
+        <li>Enemy.tscn</li>
+        <li>MainMenu.tscn</li>
+        <li>Level1.tscn</li>
+        <li>Boss.tscn</li>
+      </ul>
+      <p>Puedes crear un enemigo como una escena y después utilizarlo muchas veces dentro del juego.</p>
+      <p>Esto permite reutilizar fácilmente componentes.</p>
+    </section>
+
+    <section class="info">
+      <h2>¿Con qué lenguaje se programa?</h2>
+      <p>Godot tiene varias opciones.</p>
+
+      <h3>🟦 GDScript</h3>
+      <p>
+        Es el lenguaje creado específicamente para Godot. Su sintaxis es relativamente sencilla y está muy integrada
+        con el motor.
+      </p>
+      <pre>
+extends CharacterBody2D
+
+var speed = 300
+
+func _physics_process(delta):
+    var direction = Input.get_vector("left", "right", "up", "down")
+    velocity = direction * speed
+    move_and_slide()
+      </pre>
+      <p>Godot recomienda GDScript especialmente para principiantes.</p>
+
+      <h3>🟪 C#</h3>
+      <p>
+        También puedes utilizar C#, especialmente si ya tienes experiencia con este lenguaje.
+        Sin embargo, necesitas utilizar la versión .NET de Godot para trabajar con C#.
+      </p>
+
+      <h3>🟧 C y C++</h3>
+      <p>
+        Mediante GDExtension puedes utilizar C y C++, entre otros lenguajes compatibles con esta tecnología.
+        Esto puede ser útil cuando necesitas código de alto rendimiento.
+      </p>
+      <p>
+        Godot permite incluso combinar lenguajes: por ejemplo, utilizar GDScript para la lógica normal y C++ para una
+        parte que necesite mucho rendimiento.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>¿Es gratis?</h2>
+      <p>Sí. Esta es una de las características más importantes de Godot.</p>
+      <p>Godot es software libre y de código abierto y utiliza la licencia MIT.</p>
+      <p>Esto significa que puedes:</p>
+      <ul>
+        <li>Descargarlo gratuitamente</li>
+        <li>Utilizarlo comercialmente</li>
+        <li>Modificar el motor</li>
+        <li>Estudiar su código</li>
+        <li>Distribuir versiones modificadas</li>
+        <li>Crear juegos comerciales</li>
+        <li>Vender tus juegos</li>
+      </ul>
+      <p>Además, Godot no cobra regalías por los juegos que hagas con él.</p>
+      <p>
+        Eso sí: los proyectos creados con Godot deben cumplir los requisitos de la licencia MIT del motor, y los
+        recursos de terceros que utilices —como música, fuentes, modelos o imágenes— pueden tener sus propias licencias.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>Ventajas de Godot</h2>
+
+      <h3>✅ 1. Es gratuito</h3>
+      <p>No necesitas comprar una licencia para utilizar el motor.</p>
+      <p>Esto lo hace muy accesible para:</p>
+      <ul>
+        <li>estudiantes</li>
+        <li>principiantes</li>
+        <li>desarrolladores independientes</li>
+        <li>pequeños estudios</li>
+      </ul>
+
+      <h3>✅ 2. Es de código abierto</h3>
+      <p>Puedes consultar el código fuente del motor.</p>
+      <p>Esto significa que la comunidad puede:</p>
+      <ul>
+        <li>estudiar cómo funciona</li>
+        <li>detectar problemas</li>
+        <li>crear modificaciones</li>
+        <li>contribuir al proyecto</li>
+        <li>desarrollar herramientas adicionales</li>
+      </ul>
+
+      <h3>✅ 3. Excelente para juegos 2D</h3>
+      <p>Godot cuenta con un sistema 2D dedicado y herramientas específicas para este tipo de juegos.</p>
+      <p>Esto lo hace muy atractivo para:</p>
+      <ul>
+        <li>plataformas</li>
+        <li>RPG 2D</li>
+        <li>juegos pixel art</li>
+        <li>juegos de ritmo</li>
+        <li>shooters 2D</li>
+        <li>juegos de cartas</li>
+        <li>novelas visuales</li>
+      </ul>
+
+      <h3>✅ 4. También permite hacer juegos 3D</h3>
+      <p>
+        No está limitado a juegos 2D. Puedes desarrollar proyectos 3D completos utilizando sus herramientas de
+        renderizado, física, animación, iluminación, cámaras, etc.
+      </p>
+
+      <h3>✅ 5. Es multiplataforma</h3>
+      <p>Puedes desarrollar un proyecto y posteriormente exportarlo a diferentes plataformas.</p>
+      <ul>
+        <li>🪟 Windows ✅</li>
+        <li>🐧 Linux ✅</li>
+        <li>🍎 macOS ✅</li>
+        <li>📱 Android ✅</li>
+        <li>📱 iOS ✅</li>
+        <li>🌐 Web ✅</li>
+        <li>🎮 Consolas ⚠️ Principalmente mediante terceros</li>
+      </ul>
+      <p>Godot busca que un mismo proyecto pueda adaptarse a diferentes plataformas.</p>
+
+      <h3>✅ 6. GDScript es relativamente fácil de aprender</h3>
+      <p>
+        GDScript fue diseñado específicamente para Godot y para las necesidades del desarrollo de videojuegos.
+        Su sintaxis es sencilla y tiene una integración muy estrecha con el editor.
+      </p>
+
+      <h3>✅ 7. Tiene un editor integrado</h3>
+      <p>No necesitas construir todos los sistemas desde cero.</p>
+      <p>El editor permite trabajar con:</p>
+      <ul>
+        <li>escenas</li>
+        <li>nodos</li>
+        <li>scripts</li>
+        <li>animaciones</li>
+        <li>físicas</li>
+        <li>recursos</li>
+        <li>audio</li>
+        <li>partículas</li>
+        <li>UI</li>
+        <li>depuración</li>
+      </ul>
+
+      <h3>✅ 8. Sistema de escenas muy flexible</h3>
+      <p>Puedes convertir prácticamente cualquier componente del juego en una escena reutilizable.</p>
+      <p>Por ejemplo:</p>
+      <ul>
+        <li>Player.tscn</li>
+        <li>Enemy.tscn</li>
+        <li>Bullet.tscn</li>
+        <li>Coin.tscn</li>
+        <li>Chest.tscn</li>
+        <li>Boss.tscn</li>
+      </ul>
+      <p>Después puedes reutilizarlos en diferentes niveles.</p>
+
+      <h3>✅ 9. Buena comunidad</h3>
+      <p>Al ser código abierto, existe una comunidad que desarrolla:</p>
+      <ul>
+        <li>tutoriales</li>
+        <li>plugins</li>
+        <li>addons</li>
+        <li>herramientas</li>
+        <li>ejemplos</li>
+        <li>documentación</li>
+        <li>proyectos</li>
+      </ul>
+      <p>La propia documentación oficial ofrece tutoriales para aprender desde cero.</p>
+    </section>
+
+    <section class="info">
+      <h2>Desventajas de Godot</h2>
+
+      <h3>❌ 1. Menor presencia en algunos sectores profesionales</h3>
+      <p>
+        Aunque Godot ha crecido considerablemente, otros motores tienen una presencia histórica mayor en determinados
+        estudios y proyectos comerciales.
+      </p>
+      <p>
+        Esto significa que dependiendo del trabajo que busques, puedes encontrar más ofertas que pidan experiencia con
+        otros motores.
+      </p>
+
+      <h3>❌ 2. Menos herramientas 3D integradas que algunos competidores</h3>
+      <p>
+        Godot puede hacer juegos 3D, pero algunas herramientas avanzadas de creación de contenido 3D pueden requerir
+        software externo o addons.
+      </p>
+      <p>
+        La propia documentación señala que el entorno 3D no tiene tantas herramientas integradas como el 2D para
+        determinadas tareas.
+      </p>
+      <p>Por eso es habitual combinar Godot con herramientas como Blender.</p>
+
+      <h3>❌ 3. Consolas</h3>
+      <p>El desarrollo para consolas puede ser más complicado que para PC o móvil.</p>
+      <p>
+        Godot puede utilizarse para proyectos de consola, pero normalmente se requiere trabajar con proveedores o
+        terceros especializados en ports, en lugar de tener un flujo oficial idéntico al de PC.
+      </p>
+
+      <h3>❌ 4. Menos recursos educativos que motores más populares</h3>
+      <p>
+        Existe mucha documentación y tutoriales de Godot, pero dependiendo del tema concreto puedes encontrar
+        considerablemente más material sobre otros motores.
+      </p>
+      <p>Esto puede ser especialmente evidente cuando buscas tutoriales muy específicos.</p>
+
+      <h3>❌ 5. Cambios importantes entre versiones</h3>
+      <p>Godot 3 y Godot 4 tienen diferencias importantes.</p>
+      <p>Por ejemplo:</p>
+      <ul>
+        <li>Godot 3.x</li>
+        <li>Godot 4.x</li>
+      </ul>
+      <p>
+        Los proyectos y tutoriales de una versión no siempre son directamente compatibles con otra.
+        Esto puede causar problemas cuando encuentras un tutorial antiguo.
+      </p>
+
+      <h3>❌ 6. Algunas características todavía tienen limitaciones</h3>
+      <p>
+        Por ejemplo, en la documentación actual, los proyectos de Godot 4 que utilizan C# no pueden exportarse a Web.
+        También existen determinadas limitaciones en el soporte móvil de C#.
+      </p>
+      <p>
+        Por eso conviene elegir el lenguaje y la versión teniendo en cuenta la plataforma objetivo.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>Godot vs. un programa de programación normal</h2>
+      <p>
+        Una diferencia importante es que Godot no es simplemente un editor de código.
+      </p>
+      <p>
+        Un programa como Visual Studio Code principalmente te proporciona herramientas para escribir código.
+      </p>
+      <p>
+        Godot, en cambio, integra:
+      </p>
+      <ul>
+        <li>Programación</li>
+        <li>Gráficos</li>
+        <li>Física</li>
+        <li>Audio</li>
+        <li>Animación</li>
+        <li>Interfaz</li>
+        <li>Escenas</li>
+        <li>Exportación</li>
+        <li>Depuración</li>
+      </ul>
+      <p>Por eso se considera un motor de videojuegos.</p>
+    </section>
+
+    <section class="info">
+      <h2>¿Quién creó Godot?</h2>
+      <p>
+        Godot comenzó como un motor desarrollado internamente por un estudio argentino de videojuegos. Posteriormente
+        pasó a convertirse en un proyecto de código abierto.
+      </p>
+      <p>
+        Actualmente su desarrollo es comunitario y está respaldado por la Godot Foundation, una organización sin fines
+        de lucro.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>¿Qué tipo de personas pueden utilizarlo?</h2>
+      <p>Godot puede utilizarse por:</p>
+      <ul>
+        <li>👶 Principiantes</li>
+        <li>🎓 Estudiantes</li>
+        <li>👨‍💻 Programadores</li>
+        <li>🎨 Artistas</li>
+        <li>🎮 Desarrolladores independientes</li>
+        <li>👥 Equipos pequeños</li>
+        <li>🏢 Estudios de videojuegos</li>
+      </ul>
+      <p>No necesitas ser un experto para comenzar.</p>
+      <p>
+        De hecho, la documentación oficial tiene tutoriales específicamente diseñados para crear tu primer juego.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>¿Es difícil aprender Godot?</h2>
+      <p>Depende de lo que quieras hacer.</p>
+
+      <h3>🟢 Básico</h3>
+      <p>Relativamente sencillo:</p>
+      <ul>
+        <li>Crear un personaje</li>
+        <li>Moverlo</li>
+        <li>Crear enemigos</li>
+        <li>Detectar colisiones</li>
+        <li>Mostrar texto</li>
+        <li>Reproducir sonidos</li>
+      </ul>
+
+      <h3>🟡 Intermedio</h3>
+      <p>Ya requiere más conocimientos:</p>
+      <ul>
+        <li>Sistemas de inventario</li>
+        <li>IA</li>
+        <li>Guardado</li>
+        <li>Menús complejos</li>
+        <li>Animaciones avanzadas</li>
+        <li>Sistemas de combate</li>
+        <li>Optimización</li>
+      </ul>
+
+      <h3>🔴 Avanzado</h3>
+      <p>Puede ser bastante complejo:</p>
+      <ul>
+        <li>Multijugador</li>
+        <li>Grandes mundos 3D</li>
+        <li>Networking avanzado</li>
+        <li>Optimización extrema</li>
+        <li>C++/GDExtension</li>
+        <li>Sistemas complejos de IA</li>
+        <li>Herramientas propias</li>
+      </ul>
+    </section>
+
+    <section class="info">
+      <h2>Resumen de ventajas y desventajas</h2>
+      <ul>
+        <li>Gratis</li>
+        <li>Menor presencia en algunos estudios</li>
+        <li>Código abierto</li>
+        <li>Algunas herramientas 3D requieren software externo</li>
+        <li>Sin regalías</li>
+        <li>Desarrollo para consolas puede ser más complicado</li>
+        <li>Excelente para 2D</li>
+        <li>Menos recursos que algunos competidores en ciertos temas</li>
+        <li>También permite 3D</li>
+        <li>Cambios importantes entre versiones</li>
+        <li>Multiplataforma</li>
+        <li>Algunas funciones tienen limitaciones</li>
+        <li>GDScript fácil de aprender</li>
+        <li>Ciertas plataformas requieren configuraciones adicionales</li>
+        <li>Editor integrado</li>
+        <li>Sistema de escenas muy flexible</li>
+        <li>Comunidad activa</li>
+      </ul>
+    </section>
+
+    <div class="godot-link">
+      <a href="https://godotengine.org/es/" target="_blank">Descargue Godot aquí</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>Paseme con 10 profe</p>
+  </footer>
+</body>
+
+</html>
